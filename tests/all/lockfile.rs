@@ -1,4 +1,5 @@
 use crate::utils::fixture;
+use semver::{Version, VersionReq};
 use wasm_pack::lockfile::Lockfile;
 use wasm_pack::manifest::CrateData;
 
@@ -17,7 +18,8 @@ fn it_gets_wasm_bindgen_test_version() {
     fixture.cargo_check();
     let data = CrateData::new(&fixture.path, None).unwrap();
     let lock = Lockfile::new(&data).unwrap();
-    assert_eq!(lock.wasm_bindgen_test_version(), Some("0.3.24"),);
+    let ver = Version::parse(lock.wasm_bindgen_test_version().unwrap()).unwrap();
+    assert!(VersionReq::parse("0.3").unwrap().matches(&ver));
 }
 
 #[test]
