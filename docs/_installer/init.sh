@@ -15,6 +15,44 @@
 
 set -u
 
+# Parse VERSION from environment or --version argument, default to "latest"
+if [ -z "${VERSION:-}" ]; then
+    VERSION=""
+    ORIG_ARGS=("$@")
+    
+    while [ $# -gt 0 ]; do
+        case $1 in
+            --version)
+                VERSION="$2"
+                shift 2
+                ;;
+            *)
+                shift
+                ;;
+        esac
+    done
+    
+    set -- "${ORIG_ARGS[@]}"
+    
+    if [ -z "$VERSION" ]; then
+        VERSION="latest"
+    fi
+fi
+
+# Resolve "latest" to actual version number
+if [ "$VERSION" = "latest" ]; then
+    VERSION=$(curl -s https://api.github.com/repos/drager/wasm-pack/releases/latest | grep '"tag_name"' | sed -E 's/.*"v?([^"]+)".*/\1/')
+    if [ -z "$VERSION" ]; then
+        err "failed to fetch latest version from GitHub API"
+    fi
+fi
+
+# Normalize version format for download URL
+case "$VERSION" in
+    v*) ;;
+    *) VERSION="v$VERSION" ;;
+esac
+
 UPDATE_ROOT="https://github.com/rustwasm/wasm-pack/releases/download/$VERSION"
 
 main() {
