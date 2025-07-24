@@ -41,7 +41,7 @@ fi
 
 # Resolve "latest" to actual version number
 if [ "$VERSION" = "latest" ]; then
-    VERSION=$(curl -s https://api.github.com/repos/rustwasm/wasm-pack/releases/latest | grep '"tag_name"' | sed -E 's/.*"v?([^"]+)".*/\1/')
+    VERSION=$(curl -s https://api.github.com/repos/drager/wasm-pack/releases/latest | grep '"tag_name"' | sed -E 's/.*"v?([^"]+)".*/\1/')
     if [ -z "$VERSION" ]; then
         err "failed to fetch latest version from GitHub API"
     fi
