@@ -7,14 +7,14 @@
   </p>
 
   <p>
-    <a href="https://github.com/rustwasm/wasm-pack/actions/workflows/test.yml"><img alt="Build Status" src="https://github.com/rustwasm/wasm-pack/actions/workflows/test.yml/badge.svg?branch=master"/></a>
+    <a href="https://github.com/drager/wasm-pack/actions/workflows/test.yml"><img alt="Build Status" src="https://github.com/drager/wasm-pack/actions/workflows/test.yml/badge.svg?branch=master"/></a>
     <a href="https://crates.io/crates/wasm-pack"><img alt="crates.io" src="https://img.shields.io/crates/v/wasm-pack"/></a>
   </p>
 
   <h3>
     <a href="https://rustwasm.github.io/docs/wasm-pack/">Docs</a>
     <span> | </span>
-    <a href="https://github.com/rustwasm/wasm-pack/blob/master/CONTRIBUTING.md">Contributing</a>
+    <a href="https://github.com/drager/wasm-pack/blob/master/CONTRIBUTING.md">Contributing</a>
     <span> | </span>
     <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
   </h3>

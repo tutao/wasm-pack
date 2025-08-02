@@ -16,4 +16,4 @@ visiting that repo!
 
 [rust-wasm]: https://github.com/rustwasm/team
 
-![demo](https://github.com/rustwasm/wasm-pack/raw/master/demo.gif)
+![demo](https://github.com/drager/wasm-pack/raw/master/demo.gif)
