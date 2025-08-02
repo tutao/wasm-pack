@@ -391,7 +391,7 @@ fn it_sets_homepage_field_if_available_in_cargo_toml() {
             name = "homepage-field-test"
             repository = "https://github.com/rustwasm/wasm-pack.git"
             version = "0.1.0"
-            homepage = "https://rustwasm.github.io/wasm-pack/"
+            homepage = "https://drager.github.io/wasm-pack/"
 
             [lib]
             crate-type = ["cdylib"]
@@ -415,7 +415,7 @@ fn it_sets_homepage_field_if_available_in_cargo_toml() {
     let pkg = utils::manifest::read_package_json(&fixture.path, &out_dir).unwrap();
     assert_eq!(
         pkg.homepage,
-        Some("https://rustwasm.github.io/wasm-pack/".to_string()),
+        Some("https://drager.github.io/wasm-pack/".to_string()),
     );
 
     // When 'homepage' is unavailable
@@ -614,7 +614,7 @@ fn it_recurses_up_the_path_to_find_cargo_toml() {
             name = "recurse-for-manifest-test"
             repository = "https://github.com/rustwasm/wasm-pack.git"
             version = "0.1.0"
-            homepage = "https://rustwasm.github.io/wasm-pack/"
+            homepage = "https://drager.github.io/wasm-pack/"
         "#,
     );
     let path = get_crate_path(None).unwrap();
@@ -636,7 +636,7 @@ fn it_doesnt_recurse_up_the_path_to_find_cargo_toml_when_default() {
             name = "recurse-for-manifest-test"
             repository = "https://github.com/rustwasm/wasm-pack.git"
             version = "0.1.0"
-            homepage = "https://rustwasm.github.io/wasm-pack/"
+            homepage = "https://drager.github.io/wasm-pack/"
         "#,
     );
     let path = get_crate_path(Some(PathBuf::from("src"))).unwrap();

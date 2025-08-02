@@ -45,21 +45,21 @@ visiting that repo!
 
 This project requires Rust 1.30.0 or later.
 
-- [Development Environment](https://rustwasm.github.io/wasm-pack/book/prerequisites/index.html)
-- [Installation](https://rustwasm.github.io/wasm-pack/installer)
+- [Development Environment](https://drager.github.io/wasm-pack/book/prerequisites/index.html)
+- [Installation](https://drager.github.io/wasm-pack/installer)
 
 ## ⚡ Quickstart Guide
 
 Visit the [quickstart guide] in our documentation.
 
-[quickstart guide]: https://rustwasm.github.io/wasm-pack/book/quickstart.html
+[quickstart guide]: https://drager.github.io/wasm-pack/book/quickstart.html
 
 ## 🎙️ Commands
 
-- [`new`](https://rustwasm.github.io/wasm-pack/book/commands/new.html): Generate a new RustWasm project using a template
-- [`build`](https://rustwasm.github.io/wasm-pack/book/commands/build.html): Generate an npm wasm pkg from a rustwasm crate
-- [`test`](https://rustwasm.github.io/wasm-pack/book/commands/test.html): Run browser tests
-- [`pack` and `publish`](https://rustwasm.github.io/wasm-pack/book/commands/pack-and-publish.html): Create a tarball of your rustwasm pkg and/or publish to a registry
+- [`new`](https://drager.github.io/wasm-pack/book/commands/new.html): Generate a new RustWasm project using a template
+- [`build`](https://drager.github.io/wasm-pack/book/commands/build.html): Generate an npm wasm pkg from a rustwasm crate
+- [`test`](https://drager.github.io/wasm-pack/book/commands/test.html): Run browser tests
+- [`pack` and `publish`](https://drager.github.io/wasm-pack/book/commands/pack-and-publish.html): Create a tarball of your rustwasm pkg and/or publish to a registry
 
 ## 📝 Logging
 
@@ -78,7 +78,7 @@ RUST_LOG=info wasm-pack build
 Read our [guide] on getting up and running for developing `wasm-pack`, and
 check out our [contribution policy].
 
-[guide]: https://rustwasm.github.io/wasm-pack/book/contributing.html
+[guide]: https://drager.github.io/wasm-pack/book/contributing.html
 [contribution policy]: CONTRIBUTING.md
 
 ## 🤹‍♀️ Governance

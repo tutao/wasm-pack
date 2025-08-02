@@ -8,7 +8,7 @@ license = "MIT OR Apache-2.0"
 edition = "2021"
 readme = "README.md"
 categories = ["wasm"]
-documentation = "https://rustwasm.github.io/wasm-pack/"
+documentation = "https://drager.github.io/wasm-pack/"
 
 [dependencies]
 anyhow = "1.0.68"
