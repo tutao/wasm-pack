@@ -4,10 +4,10 @@
   "description": "📦✨ your favorite rust -> wasm workflow tool!",
   "main": "binary.js",
   "scripts": {
-    "postinstall": "node ./install.js"
+    "postinstall": "node install.js"
   },
   "bin": {
-    "wasm-pack": "./run.js"
+    "wasm-pack": "run.js"
   },
   "repository": {
     "type": "git",
