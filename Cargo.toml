@@ -10,6 +10,8 @@ readme = "README.md"
 categories = ["wasm"]
 documentation = "https://drager.github.io/wasm-pack/"
 
+[workspace]
+
 [dependencies]
 anyhow = "1.0.68"
 binary-install = "0.4.1"
